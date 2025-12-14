@@ -1,0 +1,28 @@
+,C0,C1,C2
+N_Pacientes,100,32,22
+Porcentaje_%,64.9,20.8,14.3
+Edad_años,60.2 ± 13.3,64.7 ± 19.1,65.5 ± 11.9
+IMC_kg/m2,32.5 ± 7.7,28.4 ± 6.2,27.1 ± 6.6
+ASA_score,1.2,2.8,1.8
+Tamaño_tumor_mm,2.9 ± 2.6,7.0 ± 6.9,5.9 ± 3.2
+Tipo_Endometrioide_%,0.0,0.0,0.0
+Grado_G3_%,0.0,0.0,0.0
+FIGO_Avanzado(III-IV)_%,0.0,0.0,0.0
+Infiltración_MI_%,55.0,43.8,18.2
+Afect_Linf_%,4.0,43.8,72.7
+Metástasis_%,0.0,18.8,9.1
+Riesgo_Alto_%,0.0,0.0,0.0
+RE_%,77.2,78.3,61.0
+RP_%,67.9,68.7,55.2
+Tto_Quirúrgico_%,97.0,68.8,90.9
+Radioterapia_%,6.0,40.6,63.6
+Braquiterapia_%,18.0,34.4,59.1
+Quimioterapia_%,4.0,43.8,54.5
+Recidivas_n,3,2,21
+Tasa_Recidiva_%,3.2,10.0,95.5
+DFS_1año_%,97.8,94.7,77.3
+DFS_3años_%,96.2,86.8,25.6
+Muertes_n,6,4,9
+Tasa_Muerte_%,6.1,18.2,40.9
+OS_1año_%,98.9,86.4,100.0
+OS_3años_%,94.1,75.6,68.9

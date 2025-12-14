@@ -1,0 +1,104 @@
+Cluster,Categoria,Variable,Tipo,Valor
+0,Demografía,edad,numerica,60.25 ± 13.32
+0,Demografía,imc,numerica,32.45 ± 7.70
+0,Demografía,asa,categorica,0.0: 8 (8.0%)
+0,Demografía,asa,categorica,1.0: 69 (69.0%)
+0,Demografía,asa,categorica,2.0: 22 (22.0%)
+0,Demografía,asa,categorica,6.0: 1 (1.0%)
+0,Características del Tumor,tamano_tumoral,numerica,2.92 ± 2.55
+0,Características del Tumor,tipo_histologico,numerica,3.78 ± 12.17
+0,Características del Tumor,Grado,categorica,1: 98 (98.0%)
+0,Características del Tumor,Grado,categorica,2: 2 (2.0%)
+0,Características del Tumor,FIGO2023,numerica,1.47 ± 1.41
+0,Características del Tumor,grupo_de_riesgo_definitivo,numerica,1.12 ± 0.50
+0,Invasión y Extensión,infiltracion_mi,categorica,0.0: 34 (34.0%)
+0,Invasión y Extensión,infiltracion_mi,categorica,1.0: 55 (55.0%)
+0,Invasión y Extensión,infiltracion_mi,categorica,2.0: 11 (11.0%)
+0,Invasión y Extensión,afectacion_linf,categorica,0.0: 96 (96.0%)
+0,Invasión y Extensión,afectacion_linf,categorica,1.0: 4 (4.0%)
+0,Invasión y Extensión,metasta_distan,categorica,0.0: 100 (100.0%)
+0,Invasión y Extensión,ecotv_infiltobj,categorica,1.0: 11 (11.0%)
+0,Invasión y Extensión,ecotv_infiltobj,categorica,2.0: 20 (20.0%)
+0,Invasión y Extensión,ecotv_infiltobj,categorica,3.0: 5 (5.0%)
+0,Invasión y Extensión,ecotv_infiltobj,categorica,4.0: 64 (64.0%)
+0,Perfil Molecular,recep_est_porcent,numerica,77.23 ± 21.42
+0,Perfil Molecular,rece_de_Ppor,numerica,67.89 ± 26.13
+0,Tratamientos,tto_1_quirugico,categorica,0.0: 3 (3.0%)
+0,Tratamientos,tto_1_quirugico,categorica,1.0: 97 (97.0%)
+0,Tratamientos,Tributaria_a_Radioterapia,categorica,0.0: 94 (94.0%)
+0,Tratamientos,Tributaria_a_Radioterapia,categorica,1.0: 6 (6.0%)
+0,Tratamientos,bqt,categorica,0.0: 82 (82.0%)
+0,Tratamientos,bqt,categorica,1.0: 18 (18.0%)
+0,Tratamientos,qt,categorica,0.0: 95 (95.0%)
+0,Tratamientos,qt,categorica,1.0: 4 (4.0%)
+0,Tratamientos,qt,categorica,2.0: 1 (1.0%)
+1,Demografía,edad,numerica,64.72 ± 19.12
+1,Demografía,imc,numerica,28.40 ± 6.19
+1,Demografía,asa,categorica,0.0: 1 (3.1%)
+1,Demografía,asa,categorica,1.0: 14 (43.8%)
+1,Demografía,asa,categorica,2.0: 7 (21.9%)
+1,Demografía,asa,categorica,6.0: 10 (31.2%)
+1,Características del Tumor,tamano_tumoral,numerica,7.00 ± 6.92
+1,Características del Tumor,tipo_histologico,numerica,5.56 ± 15.18
+1,Características del Tumor,Grado,categorica,1: 21 (65.6%)
+1,Características del Tumor,Grado,categorica,2: 11 (34.4%)
+1,Características del Tumor,FIGO2023,numerica,6.16 ± 5.00
+1,Características del Tumor,grupo_de_riesgo_definitivo,numerica,2.75 ± 1.87
+1,Invasión y Extensión,infiltracion_mi,categorica,0.0: 1 (3.1%)
+1,Invasión y Extensión,infiltracion_mi,categorica,1.0: 14 (43.8%)
+1,Invasión y Extensión,infiltracion_mi,categorica,2.0: 14 (43.8%)
+1,Invasión y Extensión,infiltracion_mi,categorica,3.0: 3 (9.4%)
+1,Invasión y Extensión,afectacion_linf,categorica,0.0: 18 (56.2%)
+1,Invasión y Extensión,afectacion_linf,categorica,1.0: 14 (43.8%)
+1,Invasión y Extensión,metasta_distan,categorica,0.0: 26 (81.2%)
+1,Invasión y Extensión,metasta_distan,categorica,1.0: 6 (18.8%)
+1,Invasión y Extensión,ecotv_infiltobj,categorica,1.0: 2 (6.2%)
+1,Invasión y Extensión,ecotv_infiltobj,categorica,2.0: 1 (3.1%)
+1,Invasión y Extensión,ecotv_infiltobj,categorica,3.0: 4 (12.5%)
+1,Invasión y Extensión,ecotv_infiltobj,categorica,4.0: 25 (78.1%)
+1,Perfil Molecular,recep_est_porcent,numerica,78.31 ± 13.16
+1,Perfil Molecular,rece_de_Ppor,numerica,68.69 ± 18.21
+1,Tratamientos,tto_1_quirugico,categorica,0.0: 10 (31.2%)
+1,Tratamientos,tto_1_quirugico,categorica,1.0: 22 (68.8%)
+1,Tratamientos,Tributaria_a_Radioterapia,categorica,0.0: 13 (40.6%)
+1,Tratamientos,Tributaria_a_Radioterapia,categorica,1.0: 13 (40.6%)
+1,Tratamientos,Tributaria_a_Radioterapia,categorica,2.0: 6 (18.8%)
+1,Tratamientos,bqt,categorica,0.0: 15 (46.9%)
+1,Tratamientos,bqt,categorica,1.0: 11 (34.4%)
+1,Tratamientos,bqt,categorica,2.0: 6 (18.8%)
+1,Tratamientos,qt,categorica,0.0: 11 (34.4%)
+1,Tratamientos,qt,categorica,1.0: 14 (43.8%)
+1,Tratamientos,qt,categorica,2.0: 7 (21.9%)
+2,Demografía,edad,numerica,65.50 ± 11.86
+2,Demografía,imc,numerica,27.11 ± 6.65
+2,Demografía,asa,categorica,1.0: 13 (59.1%)
+2,Demografía,asa,categorica,2.0: 7 (31.8%)
+2,Demografía,asa,categorica,6.0: 2 (9.1%)
+2,Características del Tumor,tamano_tumoral,numerica,5.86 ± 3.22
+2,Características del Tumor,tipo_histologico,numerica,4.32 ± 3.12
+2,Características del Tumor,Grado,categorica,1: 7 (31.8%)
+2,Características del Tumor,Grado,categorica,2: 15 (68.2%)
+2,Características del Tumor,FIGO2023,numerica,8.18 ± 4.44
+2,Características del Tumor,grupo_de_riesgo_definitivo,numerica,3.59 ± 1.40
+2,Invasión y Extensión,infiltracion_mi,categorica,0.0: 2 (9.1%)
+2,Invasión y Extensión,infiltracion_mi,categorica,1.0: 4 (18.2%)
+2,Invasión y Extensión,infiltracion_mi,categorica,2.0: 14 (63.6%)
+2,Invasión y Extensión,infiltracion_mi,categorica,3.0: 2 (9.1%)
+2,Invasión y Extensión,afectacion_linf,categorica,0.0: 6 (27.3%)
+2,Invasión y Extensión,afectacion_linf,categorica,1.0: 16 (72.7%)
+2,Invasión y Extensión,metasta_distan,categorica,0.0: 20 (90.9%)
+2,Invasión y Extensión,metasta_distan,categorica,1.0: 2 (9.1%)
+2,Invasión y Extensión,ecotv_infiltobj,categorica,1.0: 1 (4.5%)
+2,Invasión y Extensión,ecotv_infiltobj,categorica,2.0: 2 (9.1%)
+2,Invasión y Extensión,ecotv_infiltobj,categorica,3.0: 5 (22.7%)
+2,Invasión y Extensión,ecotv_infiltobj,categorica,4.0: 14 (63.6%)
+2,Perfil Molecular,recep_est_porcent,numerica,60.95 ± 27.56
+2,Perfil Molecular,rece_de_Ppor,numerica,55.18 ± 24.16
+2,Tratamientos,tto_1_quirugico,categorica,0.0: 2 (9.1%)
+2,Tratamientos,tto_1_quirugico,categorica,1.0: 20 (90.9%)
+2,Tratamientos,Tributaria_a_Radioterapia,categorica,0.0: 8 (36.4%)
+2,Tratamientos,Tributaria_a_Radioterapia,categorica,1.0: 14 (63.6%)
+2,Tratamientos,bqt,categorica,0.0: 9 (40.9%)
+2,Tratamientos,bqt,categorica,1.0: 13 (59.1%)
+2,Tratamientos,qt,categorica,0.0: 10 (45.5%)
+2,Tratamientos,qt,categorica,1.0: 12 (54.5%)
