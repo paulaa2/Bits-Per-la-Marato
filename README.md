@@ -69,14 +69,17 @@ Flujo de predicción:
 ```bash
 git clone <URL_DEL_REPO>
 cd <NOMBRE_DEL_REPO>
+```
 
 2) Instalar dependencias
 ```bash
 pip install -r requirements.txt
+```
 
 3) Lanzar la app
 ```bash
 streamlit run app_endometrio.py
+```
 
 ---
 ## Estructura
