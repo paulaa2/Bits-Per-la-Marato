@@ -84,9 +84,11 @@ streamlit run app_endometrio.py
 ---
 ## Estructura
 
-├── app_endometrio.py        # Aplicación principal 
-├── preprocessing.ipynb      # Limpieza e imputación 
+```text
+├── app_endometrio.py        # Aplicación principal
+├── preprocessing.ipynb      # Limpieza e imputación
 ├── clustering.ipynb         # Clustering + validación
-├── bbdd_imputed_final.csv   # Dataset procesado 
+├── bbdd_imputed_final.csv   # Dataset procesado
 ├── requirements.txt         # Dependencias
 └── README.md                # Documentación
+```
