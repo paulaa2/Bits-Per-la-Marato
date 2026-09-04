@@ -1,94 +1,68 @@
-# Calculadora de Riesgo – Cáncer de Endometrio (NEST)
+# NEST — Endometrial Cancer Risk Calculator
 
-> NSMP Endometrial Stratification Tool  
-> Herramienta de apoyo a la decisión clínica (tipo “calculadora”) para estimar riesgo de recidiva y supervivencia en pacientes con cáncer de endometrio, con foco en el grupo NSMP.
+> **NSMP Endometrial Stratification Tool**  
+> Clinical decision-support prototype for estimating recurrence risk and survival in NSMP endometrial cancer patients.
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.28%2B-ff4b4b)
 ![Status](https://img.shields.io/badge/Status-Prototype-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
 
----
+## Overview
 
-## Descripción del proyecto
+Developed during the **"Hack the Uterus"** hackathon at Hospital de la Santa Creu i Sant Pau. NEST addresses a specific clinical need: within endometrial cancer, the **NSMP** (No Specific Molecular Profile) group represents ~50% of cases where prognosis is difficult to assess with current guidelines.
 
-Este proyecto nace en el reto “Hack the Uterus” del Hospital de la Santa Creu i Sant Pau. La idea es cubrir una necesidad muy concreta: dentro del cáncer de endometrio existe el grupo molecular NSMP (No Specific Molecular Profile), que representa aproximadamente la mitad de los casos y donde el pronóstico puede ser difícil de precisar con las guías actuales.
+The tool provides clinicians with:
 
-NEST intenta aportar una estimación más clara y fácil de contextualizar para el equipo clínico:
+- **Risk group classification** (low / intermediate / high)
+- **Survival estimates** for DFS (disease-free survival) and OS (overall survival) at 1, 2, and 3 years
+- **Explainability (XAI)** — visual breakdown of which variables push risk up or down
+- **Clinical summary text** ready to copy into patient records
 
-- Clasifica a la paciente en un grupo de riesgo (bajo / intermedio / alto).
-- Estima probabilidades de DFS (supervivencia libre de enfermedad) y OS (supervivencia global) a 1, 2 y 3 años.
-- Muestra de forma visual qué variables empujan el resultado hacia más o menos riesgo.
+> **Disclaimer:** This is a research prototype for clinical decision support. It does not replace clinical judgment or established guidelines.
 
-Nota: esto es un prototipo para soporte a la decisión clínica. No sustituye el juicio clínico ni las guías.
+## How It Works
 
----
+Hybrid approach combining two complementary methods:
 
-## Qué puede hacer la app
+1. **K-Means clustering** — identifies natural patient profiles in the historical cohort; separation validated with Kaplan–Meier curves and log-rank tests
+2. **Cox proportional hazards regression** — trains on NSMP patients to generate an individual risk score
 
-- Interfaz sencilla en Streamlit con un panel lateral para introducir variables clínicas, tumorales y moleculares.
-- Asignación de grupo de riesgo (bajo, intermedio, alto) usando un enfoque de clustering.
-- Estimación de supervivencia para DFS y OS a 1, 2 y 3 años.
-- Explicabilidad (XAI): gráficos para entender qué variables han contribuido positiva o negativamente al riesgo.
-- Comparación con la cohorte histórica para dar contexto al caso.
-- Generación de un texto resumen listo para copiar en la historia clínica.
+**Prediction flow:**
+1. Clinician enters patient data via the Streamlit sidebar
+2. System imputes missing values and standardizes inputs
+3. Cox coefficients produce a risk score
+4. Predefined thresholds assign a risk group
 
----
+## Tech Stack
 
-## Cómo funciona (resumen)
+- Python, Streamlit
+- Pandas, NumPy
+- scikit-learn (preprocessing, KMeans), scikit-survival (CoxPH)
+- Plotly (interactive visualizations)
 
-El enfoque es híbrido y combina dos piezas complementarias:
+## Project Structure
 
-1) Clustering (K-Means)  
-Se utiliza para encontrar patrones naturales en la cohorte histórica y agrupar pacientes en 3 perfiles. La separación se valida con Kaplan–Meier y log-rank test.
-
-2) Regresión de Cox (supervivencia)  
-Se entrena un modelo de Riesgos Proporcionales de Cox con variables clínicas en pacientes NSMP para generar un risk score individual.
-
-Flujo de predicción:
-1. El usuario introduce los datos clínicos.
-2. El sistema imputa valores faltantes y estandariza los datos.
-3. Se calcula el risk score con los coeficientes de Cox.
-4. Se asigna el grupo de riesgo con umbrales predefinidos.
-
----
-
-## Stack tecnológico
-
-- Lenguaje: Python
-- Interfaz: Streamlit
-- Datos: Pandas, NumPy
-- Machine Learning: Scikit-learn (preprocesado, KMeans), Scikit-survival (CoxPHSurvivalAnalysis)
-- Visualización: Plotly
-
----
-
-## Cómo ejecutar
-
-1) Clonar el repositorio
-```bash
-git clone <URL_DEL_REPO>
-cd <NOMBRE_DEL_REPO>
+```
+├── app_definitiva.py        # Main Streamlit application
+├── modelo_2.py              # Survival model logic
+├── preprocessing.ipynb      # Data cleaning and imputation
+├── clustering.ipynb         # Clustering + validation
+├── bbdd_imputed_final.csv   # Processed dataset
+├── requirements.txt
+└── outputs/                 # Cluster analysis results
 ```
 
-2) Instalar dependencias
+## How to Run
+
 ```bash
 pip install -r requirements.txt
+streamlit run app_definitiva.py
 ```
 
-3) Lanzar la app
-```bash
-streamlit run app_endometrio.py
-```
+## Author
 
----
-## Estructura
+Paula Esteve Sabater
 
-```text
-├── app_definitiva.py        # Aplicación principal
-├── preprocessing.ipynb      # Limpieza e imputación
-├── clustering.ipynb         # Clustering + validación
-├── bbdd_imputed_final.csv   # Dataset procesado
-├── requirements.txt         # Dependencias
-└── README.md                # Documentación
-```
+## Context
+
+Hackathon project — Hack the Uterus, Hospital de la Santa Creu i Sant Pau.
