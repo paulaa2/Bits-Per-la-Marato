@@ -43,20 +43,28 @@ Hybrid approach combining two complementary methods:
 ## Project Structure
 
 ```
-├── app_definitiva.py        # Main Streamlit application
-├── modelo_2.py              # Survival model logic
-├── preprocessing.ipynb      # Data cleaning and imputation
-├── clustering.ipynb         # Clustering + validation
-├── bbdd_imputed_final.csv   # Processed dataset
+Bits-Per-la-Marato/
+├── app.py                          # Main Streamlit application
+├── src/                            # Python modules
+│   └── survival_model.py           # Survival model logic
+├── notebooks/                      # Exploratory & preprocessing notebooks
+│   ├── preprocessing.ipynb
+│   └── clustering.ipynb
+├── data/                           # Datasets
+│   ├── raw/
+│   │   └── IQ_Cancer_Endometrio_merged_NMSP.xlsx
+│   └── processed/
+│       └── bbdd_imputed_final.csv
+├── outputs/                        # Cluster analysis results & figures
 ├── requirements.txt
-└── outputs/                 # Cluster analysis results
+└── README.md
 ```
 
 ## How to Run
 
 ```bash
 pip install -r requirements.txt
-streamlit run app_definitiva.py
+streamlit run app.py
 ```
 
 ## Author
